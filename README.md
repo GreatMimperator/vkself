@@ -15,4 +15,4 @@ docker-compose up
 ```
 ## Более подробное пояснение по конфигурации:
 - Указать формат сообщения можно в [application.properties](src/main/resources/application.properties) в поле `send-back.format` (`%s` обозначает место, куда будет вставлена цитата)
-- Вы можете развернуть сервер `postgres` на другом узле - тогда в [application.properties](src/main/resources/application.properties) понадобится изменить значения полей `spring.datasource.*`, запускать Docker в этом случае не потребуется, однако придется исполнить скрипт [init.sql](docker-scripts/postgres/init.sql) для добавления нужных для работы таблиц
+- Вы можете развернуть сервис `postgreSQL` на другом узле - тогда в [application.properties](src/main/resources/application.properties) понадобится изменить значения полей `spring.datasource.*`, запускать Docker в этом случае не потребуется, однако придется исполнить скрипт [init.sql](docker-scripts/postgres/init.sql) для добавления нужных для работы таблиц
